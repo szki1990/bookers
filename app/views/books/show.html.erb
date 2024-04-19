@@ -1,5 +1,8 @@
 <h4>Title:</h4>
-<p><%= @new_book.title %></p>
+<p><%= @book.title %></p>
 
 <h4>Body:</h4>
-<p><%= @new_book.body %></p>
+<p><%= @book.body %></p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<%= link_to "Destroy", destroy_book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?" %>

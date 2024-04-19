@@ -1,7 +1,18 @@
 <h1>Books</h1>
 
+<% @books.each do |book| %>
+  <p>Title</p>
+  <span>
+    <%= link_to book.title, book_path(book.id) %>
+  </span>
+  <p>body</p>
+  <span>
+    <%= link_to book.body, book_path(book.id) %>
+  </span>
+<% end %>
+
 <h3>New book</h3>
-<%= form_with model: @new_book, url: book_path ,method: :post do |f| %>
+<%= form_with model: @book, url: '/book', method: :post do |f| %>
   <h4>title</h4>
   <%= f.text_field :title %>
   
@@ -9,12 +20,4 @@
   <%= f.text_area :body %>
   
   <%= f.submit 'Create Book' %>
-<% end %>
-
-
-<% @lists.each do |book| %>
-  <p>Title</p>
-  <span>
-    <%= link_to book.title, book_path(book.id) %>
-  </span>
 <% end %>
