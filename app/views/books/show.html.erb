@@ -1,8 +1,16 @@
-<h4>Title:</h4>
-<p><%= @book.title %></p>
-
-<h4>Body:</h4>
-<p><%= @book.body %></p>
-
-<%= link_to "Edit", edit_book_path(@book.id) %>
-<%= link_to "Back", books_path %>
+    <body>
+        <p class=created>
+            <%= flash[:notice] %>
+        </p>
+        
+        <div class="flex-container">
+            <strong>Title:</strong>
+            <p id="book-title"><%= @book.title %></p>
+        </div>
+            <div class="flex-container">
+            <strong>Body:</strong>
+            <p id="book-body"><%= @book.body %></p>
+        </div>
+        <%= link_to "Edit", edit_book_path(@book.id), class: "vertical-line" %>
+        <%= link_to "Back", books_path %>
+    </body>
