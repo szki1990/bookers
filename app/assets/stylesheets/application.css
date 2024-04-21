@@ -23,10 +23,75 @@ header {
   margin-left: 30px;
 }
 
-header h1 {
+h1 {
   font-weight: bolder;
+  margin: 20px;
 }
 
 body {
-  margin-left: 30px;
+  margin: 30px;
 }
+
+p {
+  padding-bottom: 30px;
+  padding-left: 50px;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
+}
+
+a:visited {
+  color: grey;
+}
+
+a {
+  color: blue;
+  margin: 10px;
+}
+
+h3 {
+  margin: 20px;
+}
+
+.errors-count {
+  width: 450px;
+  border: 2px solid red;
+  padding-bottom: 0;
+  background-color: #f0f0f0;
+}
+
+.errors-count h2 {
+  background-color: red;
+  margin: 0;
+  font-size: 15px;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.errors-count li {
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.error {
+  border: 1px solid red;
+  color: red;
+}
+
+ul {
+  list-style-type: none;
+  margin: 30px;
+}
+
+ul li:before {
+  content: "・";
+  margin-right: 5px;
+}
+
