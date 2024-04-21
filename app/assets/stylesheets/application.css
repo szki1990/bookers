@@ -34,7 +34,6 @@ body {
 p {
   padding-bottom: 30px;
   padding-left: 50px;
-  font-family: verdana, arial, helvetica, sans-serif;
 }
 
 strong {
@@ -51,7 +50,7 @@ a:visited {
 }
 
 a {
-  color: blue;
+  color: b;
   margin: 5px;
 }
 
